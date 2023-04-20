@@ -129,7 +129,7 @@ source ~/.bashrc
 
 # Laptop
 
-You can run packages and demos that don't require Duckietown hardware, such as the image processing packages. This assumes you already have ROS2 foxy installed on Ubuntu 20.04. You can follow the install steps [here](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html#install-ros-2-packages)
+You can run packages and demos that don't require Duckietown hardware, such as the image processing packages. This assumes you already have ROS2 foxy installed on Ubuntu 20.04. You can follow the install steps [here](https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html#install-ros-2-packages).
 
 
 ## Prepare directory structure
