@@ -5,7 +5,7 @@
 # DB21M/Jetson Nano
 
 ## Prepare SD card
-Follow the instructions [here](https://github.com/nicholas-gs/dt-image-maker/tree/nano/l4t) to prepare a fresh SD card for the DB21M/jetson nano with ROS2 Foxy installed.
+Follow the instructions [here](https://github.com/GAO-XINWEI/Jetson_ROS/tree/step1-Install-ROS2-on-Jetson-Nano) to prepare a fresh SD card for the DB21M/jetson nano with ROS2 Foxy installed.
 
 ## Prepare directory structure
 
