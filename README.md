@@ -152,8 +152,8 @@ Make sure you have Gstreamer and Opencv installed and that Opencv was compiled w
 ## Download the source code for Duckietown
 
 ```bash
-mkdir -p ~/dt_ws/src
-cd ~/dt_ws
+mkdir -p ~/Project/ROS/ROS2_Jetson/dt_ws/src
+cd ~/Project/ROS/ROS2_Jetson/dt_ws
 wget https://raw.githubusercontent.com/nicholas-gs/duckietown_ros2_cps/main/main.repos
 vcs import src < main.repos
 ```
@@ -161,15 +161,15 @@ vcs import src < main.repos
 ## Install Duckietown dependencies
 
 ```bash
-cd ~/dt_ws/src
+cd ~/Project/ROS/ROS2_Jetson/dt_ws/src
 rosdep install --from-paths src --ignore-src --rosdistro foxy --os ubuntu:focal -y
 ```
 
 ## Compile Duckietown codebase
 ```bash
-cd ~/dt_ws
+cd ~/Project/ROS/ROS2_Jetson/dt_ws
 colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
 
-echo "source ~/dt_ws/install/setup.bash" >> ~/.bashrc
+echo "source ~/Project/ROS/ROS2_Jetson/dt_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
