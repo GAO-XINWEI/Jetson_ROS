@@ -215,6 +215,7 @@ sudo colcon build --merge-install --install-base /opt/ros/foxy
 # We do this twice to make sure everything gets built
 # For some reason, this has been an issue
 sudo colcon build --merge-install --install-base /opt/ros/foxy
+# (consider set 'No' for java compiling, and ignore the warning.)
 
 # expand environment variables
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
