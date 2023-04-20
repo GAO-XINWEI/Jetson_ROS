@@ -174,7 +174,6 @@ cat ros2.foxy.ros_base.rosinstall && \
 
 ```bash
 # download unreleased packages
-
 cd ~/ros2_build_root
 # Clone specific commit
 sudo sh -c "git clone --branch ros2 https://github.com/Kukanani/vision_msgs src/vision_msgs && cd src/vision_msgs && git reset --hard ad6e80ee7bb2eb1d5d687568f71abece7c0b6941"
