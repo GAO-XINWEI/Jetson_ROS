@@ -174,6 +174,11 @@ rosdep install --from-paths src --ignore-src --rosdistro foxy --os ubuntu:focal 
 
 cd ~/Project/ROS/ROS2_Jetson/dt_ws
 colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
+# (Do follow command if error. Uninstall 'em' if you did that befor:)
+pip install lark \
+            numpy \
+            empy \
+            smbus2
 
 echo "source ~/Project/ROS/ROS2_Jetson/dt_ws/install/setup.bash" >> ~/.bashrc
 source ~/.bashrc
