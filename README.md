@@ -108,6 +108,9 @@ pip3 install smbus \
     numpy \
     pyserial \
     semver
+ 
+ # （Try to install Cython, if any error.)
+ pip3 install Cython
 
 sudo apt update
 # Install the Adafruit PiOLED monochrome OLED driver
