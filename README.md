@@ -208,7 +208,7 @@ sudo rm -rf /var/lib/apt/lists/*
 This process took more than 2 hours and max out the CPU.
 
 ```bash
-cd ~/ros_build_root
+cd ~/ros2_build_root
 sudo mkdir -p /opt/ros/foxy
 # sudo required to write build logs
 sudo colcon build --merge-install --install-base /opt/ros/foxy
