@@ -161,12 +161,17 @@ vcs import src < main.repos
 ## Install Duckietown dependencies
 
 ```bash
-cd ~/Project/ROS/ROS2_Jetson/dt_ws/src
+
+sudo apt install python3-rosdep2
+rosdep update
+
+cd ~/Project/ROS/ROS2_Jetson/dt_ws
 rosdep install --from-paths src --ignore-src --rosdistro foxy --os ubuntu:focal -y
 ```
 
 ## Compile Duckietown codebase
 ```bash
+
 cd ~/Project/ROS/ROS2_Jetson/dt_ws
 colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release
 
