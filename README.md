@@ -151,6 +151,13 @@ python3 -m pip install -U \
     pytest-repeat \
     pytest-rerunfailures \
     pytest
+# (Run this command if 'flake8-*' is not been install properly:
+#   installs the 'wheel' package for the current user only,
+#   which might resolve any permission-related issues.)
+pip3 install wheel
+pip3 install --user wheel
+python3 --version
+pip3 --version
 ```
 
 ### Get ROS2 Code
