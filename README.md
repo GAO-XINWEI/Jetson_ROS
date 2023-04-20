@@ -151,6 +151,7 @@ python3 -m pip install -U \
     pytest-repeat \
     pytest-rerunfailures \
     pytest
+
 # (Run this command if 'flake8-*' is not been install properly:
 #   installs the 'wheel' package for the current user only,
 #   which might resolve any permission-related issues.)
