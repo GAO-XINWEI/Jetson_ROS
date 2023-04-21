@@ -1,5 +1,5 @@
 # Install Torch on Jetson Nano
-Install torch following the instruction [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048). Notice that you many face many different package installation error caused by incompatible version of package, e.g. 'libnuma1', 'libnuma-dev', 'libhwloc-dev', 'libibverbs-dev' and 'tensorrt'. Try to install and uninstall them depending on the errors you faced.
+Install torch following the instruction [here](https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048). Notice that you may face many package installation errors caused by incompatible version of packages, e.g. 'libnuma1', 'libnuma-dev', 'libhwloc-dev', 'libibverbs-dev' and 'tensorrt'. Try to install and uninstall them depending on the errors you faced.
 
 
 ## Install Torch
