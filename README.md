@@ -159,6 +159,8 @@ pip3 install wheel
 pip3 install --user wheel
 python3 --version
 pip3 --version
+
+pip install 'https://github.com/jetson-nano-wheels/python3.6-numpy-1.19.4/releases/download/v0.0.1/numpy-1.19.4-cp36-cp36m-linux_aarch64.whl'
 ```
 
 ### Get ROS2 Code
