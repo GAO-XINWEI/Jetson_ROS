@@ -8,8 +8,13 @@ pip install 'https://github.com/jetson-nano-wheels/python3.6-scipy-1.5.4/release
 ```
 
 ## Camera Calibration 
-```bash
+Downoad 'camera_extrinsic' and copy to '/home/duckie/duckietown/config/calibrations/'
 
+```bash
+cd Downloads
+git clone https://github.com/GAO-XINWEI/Jetson_ROS.git
+unzip Jetson_ROS.zip
+cp -r ~/Downloads/Jetson_ROS/camera_extrinsic/* /home/duckie/duckietown/config/calibrations/camera_extrinsic/
 ```
 
 
