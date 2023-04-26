@@ -8,17 +8,21 @@ pip install 'https://github.com/jetson-nano-wheels/python3.6-scipy-1.5.4/release
 ```
 
 ## Camera Calibration 
-Downoad 'camera_extrinsic' and copy to '/home/duckie/duckietown/config/calibrations/'
-
+Downoad 'camera_extrinsic' and copy to '/home/duckie/duckietown/config/calibrations/'. Change the configure file name according to your device name.
 ```bash
 cd Downloads
-git clone https://github.com/GAO-XINWEI/Jetson_ROS.git
-unzip Jetson_ROS.zip
+git clone -b step5-Demo-OOD-Dectection https://github.com/GAO-XINWEI/Jetson_ROS.git
 cp -r ~/Downloads/Jetson_ROS/camera_extrinsic/* /home/duckie/duckietown/config/calibrations/camera_extrinsic/
 ```
 
+## Load Network
+```bash
+
+```
 
 ## Run the Demo
 ```bash
+cd ~
 ros2 launch dt_demos vision_pipeline.launch.xml use_fake_camera:=false ood_detector:=true
 ```
+
