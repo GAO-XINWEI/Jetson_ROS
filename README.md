@@ -17,6 +17,8 @@ cp -r ~/Downloads/Jetson_ROS/camera_extrinsic/* /home/duckie/duckietown/config/c
 
 ## Load Network
 ```bash
+export ROBOT_OOD_DIR=~/duckietown/ood/
+echo ${ROBOT_OOD_DIR}
 
 ```
 
@@ -26,3 +28,8 @@ cd ~
 ros2 launch dt_demos vision_pipeline.launch.xml use_fake_camera:=false ood_detector:=true
 ```
 
+## Show
+```bash
+
+
+```
