@@ -22,11 +22,11 @@ echo ${ROBOT_OOD_DIR}
 ```
 
 ## GPIO Permission ERROR (Ignore if no error)
-1. Follow [this website](https://forums.developer.nvidia.com/t/there-is-no-99-gpio-rules-file-in-the-latest-jetson-gpio-library/118619) to move '99-gpio.rules' files into folder.
-2. Follow [thiswebsite](https://maker.pro/nvidia-jetson/tutorial/how-to-use-gpio-pins-on-jetson-nano-developer-kit) to '' setup GPIO. Please try to uninstall 'sudo pip3 install Jetson.GPIO' if not working, since GPIO is inbuilt in Jetson Nano system.
+1. Follow this [website](https://forums.developer.nvidia.com/t/there-is-no-99-gpio-rules-file-in-the-latest-jetson-gpio-library/118619) to move '99-gpio.rules' files into folder.
+2. Follow this [website](https://maker.pro/nvidia-jetson/tutorial/how-to-use-gpio-pins-on-jetson-nano-developer-kit) to '' setup GPIO. Please try to uninstall 'sudo pip3 install Jetson.GPIO' if not working, since GPIO is inbuilt in Jetson Nano system.
 
 ## OpenCV Gstreamer ERROR (Ignore if no error)
-Reinstall OpenCV on Jetson Nano following [this](https://www.youtube.com/watch?v=3QYayL5y2hk).
+Reinstall OpenCV on Jetson Nano following this [video](https://www.youtube.com/watch?v=3QYayL5y2hk).
 
 ## Run the Demo
 ```bash
