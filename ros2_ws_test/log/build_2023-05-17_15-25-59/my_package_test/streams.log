@@ -1,0 +1,41 @@
+[0.534s] Invoking command in '/home/xinwei/Project/ROS/ros2_ws_test/src/my_package_test': CONDA_PROMPT_MODIFIER=(duckieros_may) PYTHONPATH=/home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/prefix_override:/home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_package_test build --build-base /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build install --record /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/install.log --install-scripts $base/lib/my_package_test --single-version-externally-managed
+[0.726s] running egg_info
+[0.726s] creating ../../build/my_package_test/my_package_test.egg-info
+[0.726s] writing ../../build/my_package_test/my_package_test.egg-info/PKG-INFO
+[0.726s] writing dependency_links to ../../build/my_package_test/my_package_test.egg-info/dependency_links.txt
+[0.726s] writing entry points to ../../build/my_package_test/my_package_test.egg-info/entry_points.txt
+[0.726s] writing requirements to ../../build/my_package_test/my_package_test.egg-info/requires.txt
+[0.726s] writing top-level names to ../../build/my_package_test/my_package_test.egg-info/top_level.txt
+[0.727s] writing manifest file '../../build/my_package_test/my_package_test.egg-info/SOURCES.txt'
+[0.754s] reading manifest file '../../build/my_package_test/my_package_test.egg-info/SOURCES.txt'
+[0.754s] writing manifest file '../../build/my_package_test/my_package_test.egg-info/SOURCES.txt'
+[0.754s] running build
+[0.754s] running build_py
+[0.755s] creating /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build
+[0.755s] creating /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib
+[0.755s] creating /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test
+[0.755s] copying my_package_test/talker.py -> /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test
+[0.755s] copying my_package_test/listener.py -> /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test
+[0.755s] copying my_package_test/__init__.py -> /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test
+[0.755s] running install
+[0.755s] running install_lib
+[0.756s] creating /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test
+[0.756s] copying /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test/talker.py -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test
+[0.756s] copying /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test/listener.py -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test
+[0.756s] copying /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test/__init__.py -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test
+[0.757s] byte-compiling /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test/talker.py to talker.cpython-38.pyc
+[0.758s] byte-compiling /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test/listener.py to listener.cpython-38.pyc
+[0.758s] byte-compiling /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test/__init__.py to __init__.cpython-38.pyc
+[0.758s] running install_data
+[0.758s] creating /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/ament_index
+[0.758s] creating /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/ament_index/resource_index
+[0.758s] creating /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/ament_index/resource_index/packages
+[0.759s] copying resource/my_package_test -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/ament_index/resource_index/packages
+[0.759s] copying package.xml -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/my_package_test
+[0.759s] running install_egg_info
+[0.760s] Copying ../../build/my_package_test/my_package_test.egg-info to /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test-0.0.0-py3.8.egg-info
+[0.760s] running install_scripts
+[0.776s] Installing listener script to /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/my_package_test
+[0.776s] Installing talker script to /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/my_package_test
+[0.776s] writing list of installed files to '/home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/install.log'
+[0.791s] Invoked command in '/home/xinwei/Project/ROS/ros2_ws_test/src/my_package_test' returned '0': CONDA_PROMPT_MODIFIER=(duckieros_may) PYTHONPATH=/home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/prefix_override:/home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_package_test build --build-base /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build install --record /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/install.log --install-scripts $base/lib/my_package_test --single-version-externally-managed

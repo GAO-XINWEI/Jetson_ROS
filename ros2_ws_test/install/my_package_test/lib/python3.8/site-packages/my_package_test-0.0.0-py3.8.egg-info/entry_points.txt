@@ -1,0 +1,4 @@
+[console_scripts]
+listener = my_package_test.listener:main
+talker = my_package_test.talker:main
+

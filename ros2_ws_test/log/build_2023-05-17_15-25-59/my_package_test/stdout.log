@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/my_package_test/my_package_test.egg-info
+writing ../../build/my_package_test/my_package_test.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_package_test/my_package_test.egg-info/dependency_links.txt
+writing entry points to ../../build/my_package_test/my_package_test.egg-info/entry_points.txt
+writing requirements to ../../build/my_package_test/my_package_test.egg-info/requires.txt
+writing top-level names to ../../build/my_package_test/my_package_test.egg-info/top_level.txt
+writing manifest file '../../build/my_package_test/my_package_test.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_package_test/my_package_test.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_package_test/my_package_test.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build
+creating /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib
+creating /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test
+copying my_package_test/talker.py -> /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test
+copying my_package_test/listener.py -> /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test
+copying my_package_test/__init__.py -> /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test
+running install
+running install_lib
+creating /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test
+copying /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test/talker.py -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test
+copying /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test/listener.py -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test
+copying /home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/build/lib/my_package_test/__init__.py -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test
+byte-compiling /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test/talker.py to talker.cpython-38.pyc
+byte-compiling /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test/listener.py to listener.cpython-38.pyc
+byte-compiling /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/ament_index
+creating /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/ament_index/resource_index
+creating /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/ament_index/resource_index/packages
+copying resource/my_package_test -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/ament_index/resource_index/packages
+copying package.xml -> /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/share/my_package_test
+running install_egg_info
+Copying ../../build/my_package_test/my_package_test.egg-info to /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/python3.8/site-packages/my_package_test-0.0.0-py3.8.egg-info
+running install_scripts
+Installing listener script to /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/my_package_test
+Installing talker script to /home/xinwei/Project/ROS/ros2_ws_test/install/my_package_test/lib/my_package_test
+writing list of installed files to '/home/xinwei/Project/ROS/ros2_ws_test/build/my_package_test/install.log'
