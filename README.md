@@ -1,41 +1,50 @@
-# Run the ROS2 OOD Demo on DB21M
+# Build New ROS2 Project
 
-## Preparetion
-Run this command to install dependency.
+## Setting Up Your Workspace
+Create a new directory for your workspace and a src directory inside it. The src directory will hold your packages.
 ```bash
-pip3 install 'https://github.com/jetson-nano-wheels/python3.6-numpy-1.19.4/releases/download/v0.0.1/numpy-1.19.4-cp36-cp36m-linux_aarch64.whl'
-pip3 install 'https://github.com/jetson-nano-wheels/python3.6-scipy-1.5.4/releases/download/v0.0.1/scipy-1.5.4-cp36-cp36m-linux_aarch64.whl'
+mkdir -p ~/Project/ROS/ros2_ws_test/src
+cd ~/Project/ROS/ros2_ws_test/src
 ```
 
-## Camera Calibration 
-Downoad 'camera_extrinsic' and copy to '/home/duckie/duckietown/config/calibrations/'. Change the configure file name according to your device name.
+## Creating a New Package
+Use the ros2 pkg create command to create a new Python package. Here's how you can create a package named my_package:
 ```bash
-cd Downloads
-git clone -b step5-Demo-OOD-Dectection https://github.com/GAO-XINWEI/Jetson_ROS.git
-cp -r ~/Downloads/Jetson_ROS/camera_extrinsic/* /home/duckie/duckietown/config/calibrations/camera_extrinsic/
+ros2 pkg create --build-type ament_python my_package_test
 ```
 
-## Load Network
+## Adding Nodes
+1. Create a talker.py script inside the my_package_test/my_package_test directory
+2. Create a listener.py script inside the my_package_test/my_package_test directory 
+
+## Updating setup.py
+In order for ros2 run to find your scripts, you need to install them. This is done by listing them in the setup.py file.
+Open the setup.py file located at my_package/setup.py and modify it to look like this:
 ```bash
-export ROBOT_OOD_DIR=~/duckietown/ood/
-echo ${ROBOT_OOD_DIR}
+...
+entry_points={
+    'console_scripts': [
+        'talker = my_package.talker:main',
+        'listener = my_package.listener:main',
+    ],
+},
+...
 ```
 
-## GPIO Permission ERROR (Ignore if no error)
-1. Follow this [website](https://forums.developer.nvidia.com/t/there-is-no-99-gpio-rules-file-in-the-latest-jetson-gpio-library/118619) to move '99-gpio.rules' files into folder.
-2. Follow this [website](https://maker.pro/nvidia-jetson/tutorial/how-to-use-gpio-pins-on-jetson-nano-developer-kit) to '' setup GPIO. Please try to uninstall 'sudo pip3 install Jetson.GPIO' if not working, since GPIO is inbuilt in Jetson Nano system.
-
-## OpenCV Gstreamer ERROR (Ignore if no error)
-Reinstall OpenCV on Jetson Nano following this [video](https://www.youtube.com/watch?v=3QYayL5y2hk).
-
-## Run the Demo
+## Building Your Package
+Go back to your workspace directory and build your package using colcon build:
+After building, you need to source your workspace:
 ```bash
-cd ~
-ros2 launch dt_demos vision_pipeline.launch.xml use_fake_camera:=false ood_detector:=true
+cd ~/Project/ROS/ros2_ws_test/
+colcon build --packages-select my_package_test
 ```
 
-## Show
+## Running Your Nodes
+Finally, you can run your nodes using the ros2 run command. Open two terminals and source the workspace in each. In one terminal, start the talker node:
 ```bash
-# On your local computer
-rqt_graph
+ros2 run my_package talker
+```
+In the other terminal, start the listener node:
+```bash
+ros2 run my_package listener
 ```
