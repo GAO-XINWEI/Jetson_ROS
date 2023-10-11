@@ -33,9 +33,12 @@ To restore the system from the compressed backup image in the future:
 
 2. Find the device name of the new SD card using the sudo fdisk -l command.
 
-3. Unmount all partitions of the new SD card using the sudo umount /dev/sdX* command.
+3. Unmount all partitions of the new SD card using:
+'''bash
+sudo umount /dev/mmcblk0*
+'''
 
-4. Write the compressed backup image to the new SD card using the following command (replace 'sdX' with the correct device name, and 'JetsonBackup.img.gz' with your compressed image file name):
+5. Write the compressed backup image to the new SD card using the following command (replace 'sdX' with the correct device name, and 'JetsonBackup.img.gz' with your compressed image file name):
 ```bash
 gzip -dc ~/JetsonBackup.img.gz | sudo dd of=/dev/sdX bs=4M status=progress
 ```
