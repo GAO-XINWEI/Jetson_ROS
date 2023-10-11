@@ -42,8 +42,8 @@ sudo umount /dev/mmcblk0*
 
 5. Write the compressed backup image to the new SD card using the following command (replace 'sdX' with the correct device name, and 'JetsonBackup.img.gz' with your compressed image file name):
 ```bash
-gzip -dc ~/Documents/JetsonBackup.img.gz | sudo dd of=/dev/sdX bs=4M status=progress
+gzip -dc ~/Documents/JetsonBackup.img.gz | sudo dd of=/dev/mmcblk0 bs=4M status=progress
 # or
-gzip -dc ~/JetsonBackup.img.gz | sudo dd of=/dev/sdX bs=4M status=progress
+gzip -dc ~/JetsonBackup.img.gz | sudo dd of=/dev/mmcblk0 bs=4M status=progress
 ```
 Once the process is complete, you can insert the new SD card into your Jetson Nano, and it should boot up with the backed-up system.
