@@ -34,6 +34,9 @@ To restore the system from the compressed backup image in the future:
 1. Insert a new SD card into your Ubuntu computer.
 
 2. Find the device name of the new SD card using the sudo fdisk -l command.
+```bash
+sudo dd if=/dev/zero of=/dev/mmcblk0* bs=4M count=10 status=progress
+```
 
 3. Unmount all partitions of the new SD card using:
 ```bash
